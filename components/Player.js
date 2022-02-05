@@ -13,8 +13,7 @@ import {
 } from "@heroicons/react/solid";
 import { debounce } from "lodash";
 import { useSession } from "next-auth/react";
-import { useCallback, useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useCallback, useState, useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { currentTrackIdState, isPlayingState } from "../atoms/songAtom";
 import useSongInfo from "../hooks/useSongInfo";
@@ -93,7 +92,7 @@ function Player() {
         <SwitchHorizontalIcon className="button" />
         <RewindIcon
           className="button"
-          onClick={() => spotifyApi.skipToPrevious()}
+          //   onClick={() => spotifyApi.skipToPrevious()}
         />
 
         {isPlaying ? (
@@ -103,7 +102,7 @@ function Player() {
         )}
         <FastForwardIcon
           className="button"
-          onClick={() => spotifyApi.skipToNext()}
+          //   onClick={() => spotifyApi.skipToNext()}
         />
         <ReplyIcon className="button" />
       </div>

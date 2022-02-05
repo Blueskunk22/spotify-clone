@@ -15,7 +15,7 @@ function Login({ providers }) {
         <div key={provider.name}>
           <button
             className="bg-[#18D860] text-white p-5 rounded-full"
-            onClick={() => signIn(provider.id, { callbackUrl: "/" })} // TODO: remember to update callback when you deploy: https://website.example/api/auth/callback/spotify
+            onClick={() => signIn(provider.id, { callbackUrl: "/" })} // remember to update callback when you deploy: https://website.example/api/auth/callback/spotify
           >
             Login with {provider.name}
           </button>
