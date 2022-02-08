@@ -11,6 +11,8 @@ function Login({ providers }) {
         alt=""
       />
 
+      <p className="text-white">Built for educational purposes only</p>
+
       {Object.values(providers).map((provider) => (
         <div key={provider.name}>
           <button
